@@ -1,9 +1,13 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:newscreen1/repo/news_repo.dart';
+import 'package:riverpod/riverpod.dart';
 
-import 'HomeScreen.dart';
+import 'screen/HomeScreen.dart';
 
 void main() {
-  runApp(const MyApp());
+
+  runApp( ProviderScope(child: MyApp()));
 }
 
 class MyApp extends StatelessWidget {
